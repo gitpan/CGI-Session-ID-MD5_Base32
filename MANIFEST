@@ -3,3 +3,4 @@ MANIFEST			This list of files
 MD5_Base32.pm
 META.yml
 README
+t/use.t
