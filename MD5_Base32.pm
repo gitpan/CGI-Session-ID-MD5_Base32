@@ -1,12 +1,14 @@
 package CGI::Session::ID::MD5_Base32;
 
-# $Id: MD5_Base32.pm_rev 1.1 2003/05/12 02:29:34 root Exp root $
+# $Id: MD5_Base32.pm_rev 1.2 2003/12/11 13:42:27 root Exp root $
 
 use strict;
-use MIME::Base32;
 use Digest::MD5;
+use MIME::Base32 qw( 09AV );
 
-	our $VERSION = 0.01;
+use vars qw( $VERSION );
+
+	$VERSION = '1.00';
 
 sub generate_id {
     my $self = shift;
